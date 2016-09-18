@@ -7,7 +7,7 @@ node {
     def mavenHome = tool name:'maven'
 
     stage('Build') {
-        sh "${mavenHome}/bin/mvn -B package"
+        sh "${mavenHome}/bin/mvn -B clean package"
     }
     
     stage('Deploy') {
