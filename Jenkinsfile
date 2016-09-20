@@ -1,2 +1,3 @@
-echo "${env.CHANGE_ID}"
-echo "${env.BRANH_NAME}"
+#!/usr/bin/env groovy
+
+echo "${env}"
