@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     
-    def mavenHome = tool name:'maven'
+    def mavenHome = tool name:'m3'
 
     stage('Build') {
         sh "${mavenHome}/bin/mvn -B package"
