@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
-node {
-    sh 'env > env.txt'
-    
+node('simple-slave') {
+    stage('Init') {
+        sh "env"
+    }
 }
